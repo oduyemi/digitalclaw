@@ -51,7 +51,7 @@ const Update: React.FC = () => {
 
         {/* FORM */}
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h3 className="text-xl font-semibold mb-6">
+          <h3 className="text-xl font-semibold mb-6 text-[#052161]">
             Start a project
           </h3>
 
@@ -86,7 +86,7 @@ const Update: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full bg-black text-white py-3 rounded-xl hover:opacity-80 transition"
+              className="w-full bg-[#052161] text-white py-3 rounded-xl hover:opacity-80 transition"
             >
               Send Message
             </button>

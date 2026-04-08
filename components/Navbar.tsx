@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
         {/* LOGO */}
         <div className="flex items-center gap-2 font-bold text-xl">
           <Image src="/images/logo/logo.png" alt="logo" width={40} height={40} />
-          <span>Digital Claw</span>
+          <span className="text-[#052161]">Digital Claw</span>
         </div>
 
         {/* DESKTOP */}
@@ -38,7 +38,7 @@ const NavBar: React.FC = () => {
         <div className="hidden md:block">
           <button
             onClick={() => scrollTo("contact")}
-            className="bg-black text-white px-5 py-2 rounded-full hover:opacity-80 transition"
+            className="bg-[#052161] text-white px-5 py-2 rounded-full hover:opacity-80 transition"
           >
             Get Started
           </button>

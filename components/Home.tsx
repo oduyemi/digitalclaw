@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         <div className="flex-1">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             We build digital products that 
-            <span className="text-purple-600"> grow your business</span>
+            <span className="text-[#A675A1]"> grow your business</span>
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg">
@@ -52,11 +52,11 @@ const Home: React.FC = () => {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <button className="bg-black text-white px-6 py-3 rounded-xl">
+            <button className="bg-[#052161] text-white px-6 py-3 rounded-xl">
               Get Started
             </button>
 
-            <button className="border px-6 py-3 rounded-xl">
+            <button className="border px-6 py-3 rounded-xl border-[#052161] text-[#052161]">
               View Work
             </button>
           </div>
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
       {/* SERVICES */}
       <div id="services" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#052161]">
             What We Do
           </h2>
 
@@ -144,12 +144,12 @@ const Home: React.FC = () => {
       {/* HOW WE WORK */}
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-12">Our Process</h2>
+          <h2 className="text-3xl font-bold mb-12 text-[#052161]">Our Process</h2>
 
           <div className="grid md:grid-cols-4 gap-8">
             {["Strategy", "Design", "Development", "Launch"].map((step, i) => (
               <div key={i}>
-                <div className="text-3xl font-bold text-purple-600 mb-3">
+                <div className="text-3xl font-bold text-[#A675A1] mb-3">
                   0{i + 1}
                 </div>
                 <h4 className="font-semibold">{step}</h4>
@@ -165,7 +165,7 @@ const Home: React.FC = () => {
       {/* CASE STUDIES */}
       <div id="work" className="py-20 bg-gray-50">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">
+          <h2 className="text-3xl font-bold mb-12 text-center text-[#052161]">
             Case Studies
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -182,13 +182,13 @@ const Home: React.FC = () => {
                   className="w-full"
                 />
                 <div className="p-6">
-                  <h3 className="font-semibold text-xl">
+                  <h3 className="font-semibold text-xl text-[#052161]">
                     E-commerce Growth Platform
                   </h3>
                   <p className="text-gray-600 mt-2 text-sm">
                     Built a scalable platform that increased conversions by 120%.
                   </p>
-                  <button className="mt-4 text-purple-600 text-sm">
+                  <button className="mt-4 text-[#A675A1] text-sm">
                     View Case Study →
                   </button>
                 </div>
@@ -199,7 +199,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* OUR WORK */}
-      <div id="ourWork" className="py-24">
+      <div id="ourWork" className="py-24 text-[#052161]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold">
@@ -246,7 +246,7 @@ const Home: React.FC = () => {
       {/* TESTIMONIALS */}
       <div className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-[#052161]">
             Loved by founders & teams
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -284,7 +284,7 @@ const Home: React.FC = () => {
       <div className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#052161]">
               Insights & Articles
             </h2>
             <button className="text-sm text-gray-500 hover:text-black">

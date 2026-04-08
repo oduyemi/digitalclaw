@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-20">
+    <footer className="bg-[#D6CFCB] text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12">
           {/* BRAND */}
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               Digital Claw
             </h2>
 
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-500 text-sm">
               We build high-performing digital products and growth systems
               for startups and modern businesses.
             </p>
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           {/* SERVICES */}
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-2 text-gray-500 text-sm">
               <li>Software Development</li>
               <li>Web Design</li>
               <li>SEO & Marketing</li>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           {/* COMPANY */}
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-2 text-gray-500 text-sm">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/price">Pricing</Link></li>
               <li><a href="#faq">FAQ</a></li>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
 
-            <ul className="space-y-2 text-gray-400 text-sm">
+            <ul className="space-y-2 text-gray-500 text-sm">
               <li>hello@digitalclaw.com</li>
               <li>+234 XXX XXX XXXX</li>
               <li>Lagos, Nigeria</li>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* BOTTOM */}
-        <div className="border-t border-white/10 mt-16 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+        <div className="border-t border-white/10 mt-16 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
           <span>© {new Date().getFullYear()} Digital Claw</span>
           <div className="flex gap-6 mt-4 md:mt-0">
             <span className="hover:text-white cursor-pointer">Twitter</span>
