@@ -1,0 +1,330 @@
+.Pricing{
+    width: 100%;
+    background-image: url("../img/Ellipse 226.png");
+}
+
+.Pricing .procing-block{
+    width: 90%;
+    margin-left: 5%;
+}
+.Pricing .pricing-head{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.Pricing .pricing-head-span{
+    font-weight: lighter;
+    display: inline-block;
+    width: 75%;
+    margin-left: 12.5%;
+
+}
+.Pricing .pricing-tail{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.Pricing .pricing-whiteblck{
+    color: #282938;
+    width: 32%;
+    background-color: #F4F6FC;
+    border-radius: 10px;
+}
+.Pricing .price-space{
+    width: 90%;
+    margin-left: 5%;
+}
+.Pricing .amount-block{
+    height: 50px;
+    line-height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+.Pricing .amount{
+    font-weight: 700;
+    font-size: larger;
+}
+.Pricing .amount-des{
+    margin-left: 5px;
+    font-size: small;
+    color: #2405F2;
+}
+
+.Pricing .price-type{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.Pricing .type-name{
+    font-size: large;
+    font-weight: 600;
+}
+.Pricing .type-des{
+    margin-top: 5px;
+    font-size: small;
+}
+.Pricing .price-features{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+}
+.Pricing .each-feature{
+    display: flex;
+    flex-direction: row;
+}
+.Pricing .img-point{
+    width: 10%;
+}
+.Pricing .img-txt{
+    width: 90%;
+}
+.Pricing .price-btn-whi{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 55px;
+    background-color: #282938;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #F4F6FC;
+    margin-bottom: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.Pricing .pricing-darkblck{
+    color: #ffffff;
+    width: 32%;
+    background-color: #1C1E53;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Pricing .half-circle{
+
+    background-color: #ffffff;
+    width: 200%;
+    padding-top: 200%;
+    border-radius: 50%;
+    left: -50%;
+    top: -65%;
+    opacity: 0.06;
+    position: absolute;
+    z-index: 2;
+}
+
+.Pricing .price-space-drk{
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    
+    top: 0;
+    z-index: 1;
+}
+
+.Pricing .amount-des-drk{
+    margin-left: 5px;
+    font-size: small;
+    color: #FCD980;
+}
+.Pricing .price-btn-drk{
+    width: 80%;
+    position: absolute;
+    z-index: 7;
+    margin-left: 10%;
+    margin-top: 55px;
+    background-color: #FCD980;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #282938;
+    margin-bottom: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1015px) {
+    
+    .Pricing .half-circle{
+        left: -50%;
+        top: -40%;
+    }
+}
+
+
+
+@media screen and (max-width: 980px) {
+    
+    .Pricing .half-circle{
+        left: -50%;
+        top: -20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 815px) {
+    .Pricing .pricing-head-span{
+        font-weight: lighter;
+        display: inline-block;
+        width: 90%;
+        margin-left: 5%;
+    
+    }
+    .Pricing .pricing-tail{
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Pricing .pricing-whiteblck{
+        color: #282938;
+        width: 45%;
+        background-color: #F4F6FC;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .Pricing .pricing-darkblck{
+        margin-bottom: 50px;
+        color: #ffffff;
+        width: 45%;
+        background-color: #1C1E53;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .Pricing .half-circle{
+        left: -50%;
+        top: -40%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .Pricing .pricing-tail{
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Pricing .pricing-whiteblck{
+        color: #282938;
+        margin-left: 5%;
+        width: 90%;
+        background-color: #F4F6FC;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .Pricing .pricing-darkblck{
+        margin-bottom: 50px;
+        color: #ffffff;
+        margin-left: 5%;
+        width: 90%;
+        background-color: #1C1E53;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 530px;
+        position: relative;
+    }
+    
+    .Pricing .half-circle{
+
+        background-color: #ffffff;
+        width: 200%;
+        padding-top: 200%;
+        border-radius: 50%;
+        left: -50%;
+        top: -38%;
+        opacity: 0.06;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .Pricing .price-space-drk{
+        width: 90%;
+        margin-left: 5%;
+        position: absolute;
+       
+        top: 0;
+        z-index: 1;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+.Pricing .pricing-head-span{
+    font-weight: lighter;
+    display: inline-block;
+    width: 100%;
+    margin-left: 0%;
+
+}
+
+}
+
+
+
+
+
+/* 
+============================
+         Animation
+============================ */
+
+
+.Pricing .price-btn-whi:hover{
+    transition: 1s;
+    background-color: transparent;
+    border: solid 1px #282938;
+    color: #282938;
+}
+
+
+.Pricing .price-btn-drk:hover{
+    transition: 1s;
+    background-color: transparent;
+    border: solid 1px #FCD980;
+    color: #FCD980;
+}

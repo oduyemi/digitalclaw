@@ -1,0 +1,242 @@
+.Footer a{
+    text-decoration: none;
+    color: inherit;
+  }
+.Footer{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Footer .social{
+    width: 100%;
+    background-color: #1C1E53;
+}
+.Footer .social-block{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Footer .social-head{
+    width: 40%;
+    padding-top: 50px;
+}
+.Footer .social-h-div{
+    width: 100%;
+    color: #FFFFFF;
+}
+.Footer .social-intro-div{
+    width: 80%;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+.Footer .social-head-down{
+    width: 110%;
+    padding-top: 20px;
+    background-color: #FCD980;
+    color: #282938;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Footer .social-email{
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+.Footer .social-no{
+    width: 40%;
+}
+.Footer .email{
+    font-weight: 700;
+}
+.Footer .social-tail{
+    width: 45%;
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+.Footer .social-tail-h{
+    width: 100%;
+}
+.Footer .social-tail-p{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.Footer .social-tail-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.Footer .social-icon{
+    margin-right: 10%;
+}
+
+
+
+
+
+
+
+
+
+.Footer .footer-block{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Footer .copy{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.Footer .copyright{
+    display: inline-block;
+    font-weight: 700;
+    font-size: large;
+}
+.Footer .footnav{
+    width: 60%;
+}
+
+.Footer .footerul{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+}
+.Footer .footernav{
+    display: inline-block;
+    font-weight: 600;
+    font-size: small;
+    cursor: pointer;
+}
+
+
+/* almost mobile design */
+@media screen and (max-width: 965px) {
+    .Footer .copy{
+        width: 40%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+/* mobile design */
+@media screen and (max-width: 730px) {
+    .Footer .footer-block{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .Footer .copy{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Footer .footnav{
+        width: 100%;
+
+        margin-top: 10px;
+    }
+    .Footer .footerul{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding-inline-start: 0px;
+        list-style-type: none;
+        /* align-items: center; */
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        overflow-wrap: break-word;
+    }
+    .Footer .footernav{
+        display: inline-block;
+        font-weight: 600;
+        font-size: small;
+        cursor: pointer;
+        width: 25%;
+        word-break: keep-all;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .Footer .copyright{
+        display: inline-block;
+        font-weight: 700;
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+/* 
+========================================
+            mobile design    
+=======================================   
+                        */
+@media screen and (max-width: 850px) {
+    .Footer .social-head-down{
+        width: 125%;
+    }
+}
+                        
+
+@media screen and (max-width: 700px) {
+    .Footer .social-block{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Footer .social-head{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .Footer .social-head-down{
+        width: 100%;
+    }
+    .Footer .social-tail{
+        width: 100%;
+        padding-top: 50px;
+        color: #FFFFFF;
+    }
+    .Footer .social-email{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
+    .Footer .social-no{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 372px) {
+
+    .Footer .social-head-down{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

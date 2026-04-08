@@ -1,0 +1,148 @@
+
+.Faq .faq{
+    background-color: #FFFFFF;
+    padding-top: 50px;
+}
+.Faq .faq-block{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Faq .faqTop{
+    width: 30%;
+}
+.Faq .faqTxt{
+    color: #2405F2;
+}
+.Faq .faqBottom{
+    width: 65%;
+}
+.Faq .eachFaq{
+    width: 100%;
+    cursor: pointer;
+}
+.Faq hr{
+    background-color: #ECECF1;
+    height: 1px;
+    border: none;
+
+}
+.Faq .faq-bottom-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 25px;
+}
+.Faq .blueNo{
+    color: #2405F2;
+    font-weight: 500;
+    width: 10%;
+}
+.Faq .faq-main{
+    color: #282938;
+    width: 80%;
+    font-weight: 700;
+}
+.Faq .plusIcon{
+    color: #282938;
+    width: 10%;
+    height: auto;
+    opacity: 1;
+}
+.Faq .crossIcon{
+    color: #282938;
+    width: 0%;
+    opacity: 0.0;
+    height: 0;
+}
+.Faq .faq-bottom-bottom{
+    width: 80%;
+    margin-left: 10%;
+    opacity: 0.0;
+    height: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+========================================
+            mobile design    
+=======================================   
+                        */
+
+
+@media screen and (max-width: 700px) {
+    .Faq .faq-block{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Faq .faqTop{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .Faq .no-br{
+        display: none;
+    }
+    .Faq .faqBottom{
+        width: 100%;
+    }
+
+    }
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .Faq .faq-bottom-top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 50px;
+    }
+}
+
+
+/* 
+
+
+=============================
+             Animation
+             ==================== */
+
+
+
+    .Faq .eachFaq:hover > .faq-bottom-bottom{
+        transition: 2s;
+        opacity: 1;
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+    }
+    
+    .Faq .eachFaq:hover .plusIcon{
+        color: #282938;
+        width: 0%;
+        opacity: 0.0;
+        height: 0;
+    }
+    .Faq .eachFaq:hover .crossIcon{
+        color: #282938;
+        width: 10%;
+        opacity: 1;
+        height: auto;
+    }
+    
