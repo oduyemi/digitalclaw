@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "./globals.css";
 import "@/styles/Home.css";
 import "@/styles/NavBar.css";
 import "@/styles/Footer.css";

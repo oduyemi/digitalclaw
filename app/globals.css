@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+@apply bg-white text-gray-900 antialiased;
+}
+
+.container {
+@apply max-w-7xl mx-auto px-6;
+}
+
+/* Premium buttons */
+.btn-primary {
+@apply bg-black text-white px-6 py-3 rounded-xl hover:opacity-80 transition;
+}
+
+.btn-secondary {
+@apply border border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-100 transition;
+}
