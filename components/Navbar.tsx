@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
 
         {/* DESKTOP */}
         <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
-          <Link href="/">Home</Link>
+          <Link href="/#home">Home</Link>
           <span onClick={() => scrollTo("services")} className="cursor-pointer hover:text-black">Services</span>
           <span onClick={() => scrollTo("work")} className="cursor-pointer hover:text-black">Work</span>
           <Link href="/price">Pricing</Link>

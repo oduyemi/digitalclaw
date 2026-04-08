@@ -15,7 +15,9 @@ import Update from "@/components/Update";
 export default function Page() {
   return (
     <div className="Home">
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <Trust />
       <div id="services">
         <Services />
