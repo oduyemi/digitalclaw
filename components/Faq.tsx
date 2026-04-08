@@ -94,7 +94,7 @@ const Faq: React.FC = () => {
             Still have questions?
           </p>
 
-          <button className="bg-black text-white px-6 py-3 rounded-xl">
+          <button className="bg-white text-black px-6 py-3 rounded-xl">
             Contact Us
           </button>
         </div>
