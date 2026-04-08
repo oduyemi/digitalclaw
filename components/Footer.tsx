@@ -1,94 +1,70 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { scroller } from "react-scroll";
-
 
 const Footer: React.FC = () => {
-  const scrollTo = (target: string) => {
-    scroller.scrollTo(target, {
-      duration: 1000,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-
   return (
-    <div className="Footer" id="footer">
-      {/* SOCIAL */}
-      <div className="social">
-        <div className="social-block">
-          <div className="social-head">
-            <h2>{"{finsweet"}</h2>
+    <footer className="bg-black text-white py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-12">
+          {/* BRAND */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4">
+              Digital Claw
+            </h2>
 
-            <span>
-              We are always open to discuss your project and improve your online
-              presence.
-            </span>
-
-            <div className="social-head-down">
-              <div>
-                <span>Email me at</span>
-                <br />
-                <span>contact@website.com</span>
-              </div>
-
-              <div>
-                <span>Call Us</span>
-                <br />
-                <span>0927 6677 89075</span>
-              </div>
-            </div>
+            <p className="text-gray-400 text-sm">
+              We build high-performing digital products and growth systems
+              for startups and modern businesses.
+            </p>
+          </div>
+          {/* SERVICES */}
+          <div>
+            <h4 className="font-semibold mb-4">Services</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>Software Development</li>
+              <li>Web Design</li>
+              <li>SEO & Marketing</li>
+              <li>Social Media Ads</li>
+            </ul>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="social-tail">
-            <h2>Lets Talk!</h2>
+          {/* COMPANY */}
+          <div>
+            <h4 className="font-semibold mb-4">Company</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/price">Pricing</Link></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#work">Work</a></li>
+            </ul>
+          </div>
 
-            <span>
-              We are always open to discuss your project, improve your online
-              presence and help with your UX/UI design challenges.
-            </span>
+          {/* CONTACT */}
+          <div>
+            <h4 className="font-semibold mb-4">Contact</h4>
 
-            <div className="social-tail-icon">
-              {["/images/fb.png", "/images/twitter.png", "images/ig.png", "/images/linkedin.png"].map((icon, i) => (
-                <div className="social-icon" key={i}>
-                  <Image src="/images/Icon.png" alt="social" width={24} height={24} />
-                </div>
-              ))}
-            </div>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>hello@digitalclaw.com</li>
+              <li>+234 XXX XXX XXXX</li>
+              <li>Lagos, Nigeria</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* BOTTOM */}
+        <div className="border-t border-white/10 mt-16 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+          <span>© {new Date().getFullYear()} Digital Claw</span>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <span className="hover:text-white cursor-pointer">Twitter</span>
+            <span className="hover:text-white cursor-pointer">LinkedIn</span>
+            <span className="hover:text-white cursor-pointer">Instagram</span>
           </div>
         </div>
+
       </div>
-
-      {/* FOOTER NAV */}
-      <div className="footer-block">
-        <div className="copy">
-          <span>Copyright 2022, Finsweet.com</span>
-        </div>
-
-        <div className="footnav">
-          <ul className="footerul">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-
-            <li onClick={() => scrollTo("Testimonies")}>About us</li>
-
-            <li onClick={() => scrollTo("features")}>Features</li>
-
-            <li>
-              <Link href="/price">Pricing</Link>
-            </li>
-
-            <li onClick={() => scrollTo("faq")}>FAQ</li>
-
-            <li onClick={() => scrollTo("blog")}>Blog</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 

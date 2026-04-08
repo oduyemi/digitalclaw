@@ -1,123 +1,100 @@
 "use client";
 
-import React, { useContext, useState, ChangeEvent, FormEvent } from "react";
-import Image from "next/image";
-import { TestimonyContext } from "../contexts/TestimonyContext";
-
-// Images
-import arrowE from "@/public/img/Arrow 4.png";
-import womanWriting from "@/public/img/woman-writing-on-paper-3228878.png";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 
 const Update: React.FC = () => {
-  const { updateTestimony } = useContext(TestimonyContext);
-
   const [formData, setFormData] = useState({
-    q: "",
-    t: "",
-    p: "",
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { className, value } = e.target;
-
-    if (className.includes("inp-quote")) {
-      setFormData((prev) => ({ ...prev, q: value }));
-    } else if (className.includes("inp-testifier")) {
-      setFormData((prev) => ({ ...prev, t: value }));
-    } else if (className.includes("inp-position")) {
-      setFormData((prev) => ({ ...prev, p: value }));
-    }
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const updateQuote = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    updateTestimony(
-      [formData.q], // keep your original API shape
-      [formData.t],
-      [formData.p]
-    );
+    console.log(formData); // connect to backend later
 
-    // optional reset
-    setFormData({ q: "", t: "", p: "" });
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
-    <div className="Update" id="contactus">
-      <div className="contact-form">
-        <div className="contact-form-block">
-          
-          {/* LEFT SIDE */}
-          <div className="explain">
-            <div className="explain-div">
-              <h1>
-                Building stellar <br /> websites for early startups
-              </h1>
+    <section id="contact" className="py-24 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
-            </div>
+        {/* LEFT SIDE */}
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            Let’s build something amazing together
+          </h2>
 
-            <Image
-              src="/images/woman-writing-on-paper-3228878.png"
-              alt="Someone writing"
-              width={60}
-              height={60}
-              className="explain-img"
-            />
+          <p className="text-gray-600 mt-4">
+            Tell us about your project — we’ll help you design, build, and grow it.
+          </p>
+
+          <div className="mt-8 space-y-4 text-sm text-gray-500">
+            <p>📧 hello@digitalclaw.com</p>
+            <p>📍 Lagos, Nigeria</p>
+            <p>⚡ Typically replies within 24 hours</p>
           </div>
-
-          {/* FORM */}
-          <div className="actual-form">
-            <div className="actual-form-block">
-              <div className="formhead">
-                <h3>Update Testimony</h3>
-                <p>
-                  This is actually a contact page but reused for testimonials.
-                </p>
-              </div>
-
-              <form className="contact-us-form" onSubmit={updateQuote}>
-                <input
-                  type="text"
-                  placeholder="Enter Testimony"
-                  className="inp-quote inp"
-                  value={formData.q}
-                  onChange={handleChange}
-                />
-
-                <input
-                  type="text"
-                  placeholder="Enter Testifier Name"
-                  className="inp-testifier inp"
-                  value={formData.t}
-                  onChange={handleChange}
-                />
-
-                <input
-                  type="text"
-                  placeholder="Enter Testifier Position"
-                  className="inp-position inp"
-                  value={formData.p}
-                  onChange={handleChange}
-                />
-
-                <button type="submit" className="update-btn">
-                  Update Testimony
-                </button>
-
-                <div className="getin-contact">
-                  Get in touch with us{" "}
-                  <Image src="/images/Arrow4.png" alt="arrow" width={16} height={16} />
-                </div>
-              </form>
-            </div>
-          </div>
-
         </div>
+
+        {/* FORM */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <h3 className="text-xl font-semibold mb-6">
+            Start a project
+          </h3>
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Tell us about your project..."
+              value={formData.message}
+              onChange={handleChange}
+              rows={4}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black"
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-black text-white py-3 rounded-xl hover:opacity-80 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

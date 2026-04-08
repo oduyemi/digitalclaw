@@ -1,9 +1,5 @@
 import "./globals.css";
-import "@/styles/Home.css";
-import "@/styles/NavBar.css";
-import "@/styles/Footer.css";
 import "@/styles/Pricing.css";
-import "@/styles/Faq.css";
 import "@/styles/fontawesome.css";
 
 import NavBar from "@/components/Navbar";
